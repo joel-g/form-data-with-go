@@ -5,6 +5,7 @@ import (
 	"math/rand"
 	"net/http"
 	"net/url"
+	"time"
 )
 
 var path = "https://vc0.publicstuff.com/api/2.0/request_submit?device=iframe"
@@ -17,6 +18,7 @@ func main() {
 		}
 		defer resp.Body.Close()
 		fmt.Println(resp.StatusCode)
+		time.Sleep(60 * time.Second)
 	}
 }
 
