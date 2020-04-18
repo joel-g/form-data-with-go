@@ -18,7 +18,6 @@ func main() {
 		defer resp.Body.Close()
 		fmt.Println(resp.StatusCode)
 	}
-
 }
 
 func generateReportBody(lat, lon string) url.Values {
